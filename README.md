@@ -7,15 +7,18 @@ React responsive Layout with easy to use theme made with chakra-ui. specially de
 1.  Layout
 2.  Side Drawer
 3.  Navbar
-4.  Night mode
-5.  Routing
+4.  React-icons
+5.  Night mode
+6.  Routing
 
 # Dependencies
 
-**React**: 17.0.2
-**react-router-dom**: 6
-**@chakra-ui/react**: 1.7.4
-**framer-motion**: 5
+1.  **React**: 17.0.2
+2.  **react-router-dom**: 6
+3.  **@chakra-ui/react**: 1.7.4
+4.  **framer-motion**: 5
+5.  **simplebar-react**: 2.3.6
+6.  **react-icons**: 4.3.1
 
 ## Available Scripts
 
