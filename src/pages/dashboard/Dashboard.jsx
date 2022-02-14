@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Input, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 const Dashboard = () => {
   return (
@@ -11,7 +11,7 @@ const Dashboard = () => {
           as="span"
           fontWeight="extrabold"
         >
-          Family Hardware
+          Wolf Skeleton
         </Text>
       </Flex>
       {Array.from(Array(7).keys()).map((x) => (

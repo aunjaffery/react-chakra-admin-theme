@@ -40,7 +40,7 @@ const Navbar = () => {
           />
           <Box ml="4">
             <Text fontWeight="bold" fontSize="xl" color="white">
-              Family Hardware
+              Wolf skeleton
             </Text>
           </Box>
         </Flex>
