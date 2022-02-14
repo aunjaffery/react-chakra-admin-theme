@@ -5,7 +5,7 @@ const Navbar = ({ onOpen, isOpen, onClose }) => {
   return (
     <Box w="100%">
       <Flex
-        bg="purple.800"
+        bg="brand.100"
         h="60px"
         align="center"
         px="4"
@@ -27,9 +27,9 @@ const Navbar = ({ onOpen, isOpen, onClose }) => {
             _focus={{ outline: "none" }}
             onClick={isOpen ? onClose : onOpen}
             size="md"
-            bg="purple.800"
-            _hover={{ bg: "purple.800" }}
-            _active={{ bg: "purple.800" }}
+            bg="brand.100"
+            _hover={{ bg: "brand.100" }}
+            _active={{ bg: "brand.100" }}
             color="white"
             borderRadius="full"
             boxShadow="md"

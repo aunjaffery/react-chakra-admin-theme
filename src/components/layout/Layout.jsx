@@ -12,7 +12,7 @@ import "simplebar/dist/simplebar.min.css";
 import { useEffect } from "react";
 
 const Layout = ({ children }) => {
-  const [isLarger] = useMediaQuery("(min-width: 786px)");
+  const [isLarger] = useMediaQuery("(min-width: 768px)");
   const { isOpen, onClose, onOpen } = useDisclosure();
   useEffect(() => {
     if (isLarger) {

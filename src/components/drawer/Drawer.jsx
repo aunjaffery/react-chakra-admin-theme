@@ -37,8 +37,15 @@ const DrawerComp = ({ onClose, isOpen, isLarger }) => {
           <IconButton
             aria-label="loggo"
             bg="none"
-            color="purple.600"
-            icon={<SiFirefox size="32" />}
+            color="brand.100"
+            icon={
+              <SiFirefox
+                size="32"
+                style={{
+                  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+                }}
+              />
+            }
           />
         </Flex>
         <Box>
