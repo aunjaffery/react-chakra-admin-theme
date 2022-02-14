@@ -1,9 +1,6 @@
 import { Box, Flex, Text, Input, Button } from "@chakra-ui/react";
-import { useStore } from "../../services/store";
 
 const Settings = () => {
-  const { msgs, setMsg } = useStore((state) => state);
-  console.log({ msgs });
   const sendMsg = (e) => {
     e.preventDefault();
     if (e.target.msg.value) {
@@ -11,7 +8,7 @@ const Settings = () => {
         channelId: e.target.channelId.value,
         msg: e.target.msg.value,
       };
-      setMsg(data);
+      console.log(data);
     }
   };
   return (

@@ -1,12 +1,16 @@
 import { Box, Flex, IconButton, Text } from "@chakra-ui/react";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
+import { useAppStore } from "../../store/AppStore";
 
-const Navbar = ({ onOpen, isOpen, onClose }) => {
+const Navbar = () => {
+  const { isSidebarOpen, onSidebarClose, onSidebarOpen } = useAppStore(
+    (state) => state
+  );
   return (
     <Box w="100%">
       <Flex
         bg="brand.100"
-        h="60px"
+        h="68px"
         align="center"
         px="4"
         justify="space-between"
@@ -18,14 +22,14 @@ const Navbar = ({ onOpen, isOpen, onClose }) => {
             }}
             aria-label="close-btn"
             icon={
-              isOpen ? (
+              isSidebarOpen ? (
                 <AiOutlineMenuFold size="22" />
               ) : (
                 <AiOutlineMenuUnfold size="22" />
               )
             }
             _focus={{ outline: "none" }}
-            onClick={isOpen ? onClose : onOpen}
+            onClick={isSidebarOpen ? onSidebarClose : onSidebarOpen}
             size="md"
             bg="brand.100"
             _hover={{ bg: "brand.100" }}
@@ -36,7 +40,7 @@ const Navbar = ({ onOpen, isOpen, onClose }) => {
           />
           <Box ml="4">
             <Text fontWeight="bold" fontSize="xl" color="white">
-              Home
+              Family Hardware
             </Text>
           </Box>
         </Flex>

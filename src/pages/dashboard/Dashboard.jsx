@@ -11,10 +11,10 @@ const Dashboard = () => {
           as="span"
           fontWeight="extrabold"
         >
-          The Fire Wolf
+          Family Hardware
         </Text>
       </Flex>
-      {Array.from(Array(10).keys()).map((x) => (
+      {Array.from(Array(7).keys()).map((x) => (
         <Box
           bg="white"
           borderRadius="lg"
